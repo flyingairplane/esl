@@ -1,0 +1,9 @@
+data=importdata('D:\Program\python\esl\chapter5\SAheart.subdata.formatlab.txt');
+data=data.data
+st=tpaps(data(:,2:3)',data(:,1)')
+points=fnplt(st)
+contourf(points{1},points{2},points{3})
+xlabel('age')
+ylabel('obesity')
+title('sbp')
+colorbar
